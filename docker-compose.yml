@@ -1,0 +1,27 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  backend:
+    build: .
+    container_name: fastapi_backend
+    restart: always
+    env_file:
+      - .env
+    depends_on:
+      - mariadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+volumes:
+  mariadb_data:

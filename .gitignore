@@ -1,0 +1,42 @@
+# Ambiente virtual
+venv/
+.env
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Alembic
+alembic/versions/
+
+# Docker
+*.pid
+*.log
+*.bak
+*.swp
+.mypy_cache/
+.pytest_cache/
+
+# VSCode
+.vscode/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários e backup
+*.tmp
+*.old
+*~
+
+# Arquivos gerados por testes ou builds
+coverage/
+htmlcov/
+dist/
+build/
+
+# Arquivos Python bytecode
+*.pyc
+*.pyo
+
+# Dependências (se instalar localmente com pip)
+pip-wheel-metadata/
