@@ -16,6 +16,7 @@ passlib==1.7.4
 pyasn1==0.4.8
 pydantic==2.11.2
 pydantic_core==2.33.1
+pydantic-settings
 PyMySQL==1.1.1
 python-dotenv==1.1.0
 python-jose==3.4.0
@@ -31,3 +32,4 @@ uvicorn==0.34.0
 uvloop==0.21.0
 watchfiles==1.0.4
 websockets==15.0.1
+python-multipart
